@@ -69,35 +69,35 @@ def gen_author_list(*author_names):
 
 def get_papers():
     papers = []
+    papers.append(Paper(
+        tag="xx",
+        title="xx",
+        short_title="xx",
+        conference="xx",
+        conference_short="xx",
+        year=2025,
+        authors=gen_author_list("Liu Liu*"),
+        url="xx",
+        url_paper="xx",
+        url_arxiv="xx",
+        # image="./images/xx.png",
+        # special_honor="xx",
+        # video_after="./images/xx.mp4"
+    ))
     # papers.append(Paper(
-    #     tag="ngprt",
-    #     title="NGP-RT: Fusing Multi-Level Hash Features with Lightweight Attention for Real-Time Novel View Synthesis",
-    #     short_title="NGP-RT",
-    #     conference="European Conference on Computer Vision",
-    #     conference_short="ECCV'25",
-    #     year=2025,
-    #     authors=gen_author_list("Yubin Hu*", "Liu Liu*", "Yang Xiao", "Jingwei Huang", "Yong-Jin Liu"),
-    #     url="https://link.springer.com/chapter/10.1007/978-3-031-72670-5_9",
-    #     url_paper="https://link.springer.com/chapter/10.1007/978-3-031-72670-5_9",
-    #     url_arxiv="https://arxiv.org/abs/2407.10482",
-    #     image="./images/ngprt.png",
-    #     special_honor="Realtime streamed on Petal Map App",
-    #     video_after="./images/ngp_rt_shitang.mp4"
+    #     tag="arrangement",
+    #     title="ArrangementNet: Learning Scene Arrangements for Vectorized Indoor Scene Modeling",
+    #     short_title="ArrangementNet",
+    #     conference="ACM Transactions on Graphics (TOG) ",
+    #     conference_short="TOG'23",
+    #     year=2023,
+    #     authors=gen_author_list("Jingwei Huang", "Shanshan Zhang", "Bo Duan", "Liu Liu", "Minwei Sun", "Li Yi"),
+    #     url="https://dl.acm.org/doi/10.1145/3592122",
+    #     image="./images/arrangementnet.png",
+    #     url_arxiv="",
+    #     url_paper="https://dl.acm.org/doi/10.1145/3592122",
+    #     special_honor="Journal Track"
     # ))
-#     papers.append(Paper(
-#         tag="arrangement",
-#         title="ArrangementNet: Learning Scene Arrangements for Vectorized Indoor Scene Modeling",
-#         short_title="ArrangementNet",
-#         conference="ACM Transactions on Graphics (TOG) ",
-#         conference_short="TOG'23",
-#         year=2023,
-#         authors=gen_author_list("Jingwei Huang", "Shanshan Zhang", "Bo Duan", "Liu Liu", "Minwei Sun", "Li Yi"),
-#         url="https://dl.acm.org/doi/10.1145/3592122",
-#         image="./images/arrangementnet.png",
-#         url_arxiv="",
-#         url_paper="https://dl.acm.org/doi/10.1145/3592122",
-#         special_honor="Journal Track"
-#     ))
 #     papers.append(Paper(
 #         tag="liga",
 #         title="LIGA-Stereo: Learning Lidar Geometry aware Representations for Stereo-based 3d Detector",
